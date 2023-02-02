@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>  PORTRAIT CHINOIS - Andy Rabarison</title>
+</head>
+
+<body>
+    <div class="titre">
+        <h1>PORTRAIT CHINOIS RABARISON ANDY</h1>
+        <h3>MMI</h3>
+        <button class="btn-discover" onclick="location.href='#1'"> Découverte ! </button>
+    <div id="1">
+  </div>
+</div>
+<!-- Bouton de retour en haut de page -->
+<div class="retourTop"><i class="fa fa-long-arrow-up" aria-hidden="true">  </i></div>
+<div class="liste-analogies"></div>
+<div id="nvAnas" class="liste-analogies"></div>
+
+<!-- Formulaire -->
+<div class="portrait-chinois" id="bloc"></div> 
+<section class="formu" id="Formulaire">
+    <main class="styleform">
+        <form action="" method="get">
+            <h1 class ="topun">Soumettez vos idées</h1>
+            <h3>MAIL</h3>
+            <input type="email"  id="mail" required>
+            <h3>SI J'ETAIS ...</h3>
+            <input type="text" id="analogie" required>
+            <h3>JE SERAIS ...</h3>
+            <input type="text"  id="valeurAnalogie" required>
+            <h3>IMAGE D'ILLUSTRATION</h3>
+            <input type="url" id="imgAnalogie" name="imgAnalogie" required>
+            <h3>EXPLICATION</h3>
+            <textarea class="arg" type="text" id="justify" cols="40"
+                rows="5" spellcheck="true"></textarea>
+            <p class="formbtn">
+                <input type="submit" value="Envoyer" id="send" name="send">
+            </p>
+        </form>
+        <div id="message"></div>
+    </main>
+</section>
+
+<!-- MENTIONS LEGALES -->
+<section class="volet-invisible volet" id="volet">
+    <footer>
+        <div class="mention">
+            <h1> Mentions Légales</h1>
+                <br> Informations éditeur 
+                <br> Projet réalisé par Rabarison Andy
+
+            <br>Source:
+            <br> Image batterie = https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.anacours-musique.com%2Fcomment-choisir-sa-batterie%2F&psig=AOvVaw2ZRJhgsB6GZBwVw7MLPR0z&ust=1673649350566000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCODnyuqLw_wCFQAAAAAdAAAAABAE
+            <br> Image police d'écriture = https://www.google.com/url?sa=i&url=https%3A%2F%2Ffrfonts.pro%2Fpolice%2Fcentury-gothic-police&psig=AOvVaw0nE7BcmW7YfWo0PwRUI1ly&ust=1673649444953000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPD6qpeMw_wCFQAAAAAdAAAAABAE
+            <br> Image musique = https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.last.fm%2Fmusic%2F%25E5%25B2%25A9%25E5%25B4%258E%25E7%2590%25A2%2F_%2F%2522Libera%2BMe%2522%2BFrom%2BHell&psig=AOvVaw3df6EYO_7_32wQVCc0G018&ust=1673649481291000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDE56iMw_wCFQAAAAAdAAAAABAE
+            <br> Image émission = https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fc%2FZen%25C3%25A9mission&psig=AOvVaw1XH1b7e3RieC_IKw7QV5X8&ust=1673649542425000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKjM3sWMw_wCFQAAAAAdAAAAABAD
+            <br> Image jeux = https://www.google.com/url?sa=i&url=https%3A%2F%2Fxbox-mag.net%2F2022%2F09%2F01%2Ftrois-nouvelles-minutes-de-decouverte-de-kronos-dans-sonic-frontiers%2F&psig=AOvVaw2UBnxE-e0-Y4BndjslOrop&ust=1673649679679000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjcr4eNw_wCFQAAAAAdAAAAABAE
+
+
+            <br>
+            Informations hébergeur 
+            <br> Identité : Université Gustave Eiffel
+            <br> Adresse : 2 rue Albert Einstein, 77420 Champs-sur-Marne, France
+            <br> Téléphone : +33 (0)1 60 95 75 00
+            <br> Adresse mail : webmaster@univ-eiffel.fr
+            <br> Conformément à l'article 15 du Règlement général sur la protection des données (RGPD) du 27 avril 2016, vous disposez d'un droit d'accès aux informations vous concernant. Si vous trouvez que ces informations sont incorrectes, l'article 16 du RGPD vous permet de les modifier ou de les supprimer. 
+            <br> Ce formulaire récolte conservera deux données importantes à savoir votre adresse Ip et votre mail. Cependant elle ne seront conserver que 1 ans avant d'être supprimer. Si pour autant cela vous dérange, la personne responsable du traitement des données à savoir Philippe Gambette et joignable à cette adresse : philippe.gambette@univ-eiffel.fr 
+            </p>
+        </div>
+    </footer>
+</section>
+<!-- Appel des analogies et écriture du script en javascript -->
+<script src="data.js"></script>
+    <script>
+    /*Bouton de retour vers le haut de page*/
+    const retourTopBtn = document.querySelector(".retourTop");
+    window.onscroll=()=> {
+        this.scrollY > 1020? retourTopBtn.classList.add("show") : retourTopBtn
+        .classList.remove("show");
+    };
+    retourTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior: 'smooth'
+        })
+    });
+    
+    var numCase;
+    var compteur;
+    analogies.forEach(function afficheNote(analogie) {
+        document.querySelector('.liste-analogies').innerHTML = document.querySelector('.liste-analogies').innerHTML += 
+        "<section id = " + analogie.id + " class=\"analogie\"><div class = \"carreAna\"><img src= " +
+             analogie.img +" alt=\"imgAna\" class=\"ImgAna\"><div class = \"descAnalogie\"><h2>Si j'étais un "+
+                 "<span>" + analogie.analogies + ",</span> je serais " +
+                     analogie.valeursAnalogies + ",</h1><p class = 'texteJustify'> " + analogie.justification + 
+        " </p></div> " + "</div></section>"
+        numCase++;
+        compteur++;
+        })
+
+        //Création d'une nouvelle section lors de l'envoie du formulaire
+        document.querySelector('#send').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.querySelector('#nvAnas').innerHTML += '<section class=\"analogie\"><div class = \"carreAna\"><img src= ' +
+        document.querySelector("#imgAnalogie").value + ' alt=\"imgAna\" class=\"ImgAna\"><div class = \"descAnalogie\"><h2>Si j\'étais\<span> '+
+        document.querySelector("#analogie").value  + ',</span> je serais ' +
+        document.querySelector('#valeurAnalogie').value + ',</h1><p class = \'texteJustify\'> ' + 
+        document.querySelector('#justify').value + '</p></div></div></section>'
+        });
+  
+    //Envoie des réponses au formulaire à l'API
+    document.querySelector("#send").addEventListener('click', function(response){
+        fetch("https://perso-etudiant.u-pem.fr/~gambette/portrait/api.php?format=json&login=andy.rabarison&courriel= " + 
+        document.querySelector("#mail").value + " &message = Si j'étais... " + 
+        document.querySelector("#analogie").value + " je serais ..." + 
+        document.querySelector("#valeurAnalogie").value + " car " + 
+        document.querySelector("#justify").value).then(function(response){
+            response.json().then(function (data){
+                if (data.status == "success") {
+                    document.querySelector("#message").innerHTML = "Message reçus";
+                }   else    {
+                    document.querySelector("#message").innerHTML = "Erreur lors de l'envoie";
+                }
+            })
+        })
+    });
+
+    //Détection lors de l'écriture dans les champs de texte
+    document.querySelector("#mail").addEventListener('keyup', function (e) {
+        console.log("Champ de texte modifié");
+
+        document.querySelector("#mail").innerHTML = document.querySelector("#mail").value;
+    })
+    document.querySelector("#valeurAnalogie").addEventListener('keyup', function (e) {
+        console.log("Champ de texte modifié");
+
+        document.querySelector("#valeurAnalogie").innerHTML = document.querySelector("#valeurAnalogie").value;
+    })
+    document.querySelector("#imgAnalogie").addEventListener('keyup', function (e) {
+        console.log("Champ de texte modifié");
+
+        document.querySelector("#imgAnalogie").innerHTML = document.querySelector("#imgAnalogie").value;
+    })
+    document.querySelector("#justify").addEventListener('keyup', function (e) {
+        console.log("Champ de texte modifié");
+
+        document.querySelector("#justify").innerHTML = document.querySelector("#justify").value;
+    })
+
+    //Détection du clique sur les mentions legales avec ouverture et fermeture du volet pour rendre visible ou invisible les mentions légales
+    document.querySelector('.volet-invisible').addEventListener('click', () => {
+    document.getElementById('volet').animate([{height: '30em'}], {duration: 400});
+    setTimeout(() => {
+        document.querySelector('.volet-invisible').classList.replace('volet-invisible', 'volet-visible');
+    }, 400);
+});
+
+document.getElementById('volet').addEventListener('click', () => {
+    document.querySelector('.volet-visible').animate([{height: '3em'}], {duration: 300});
+    setTimeout(() => {
+        document.getElementById('volet').classList.replace('volet-visible', 'volet-invisible');
+    }, 300);
+});
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+var analogies = [{"id":"1",
+"analogies":"un instrument",
+"valeursAnalogies": "la batterie",
+ "justification":"Instrument de percussion se jouant avec de baguettes et des pédales. Il s'agit de l'instrument qui ma donné l'envie d'apprendre la musique de part sa complexité et la tonalité qu'elle renvoie à chaque coup. Cependant ce qui me caractèrifie le plus en rapport à cette instrument et sa capacité à se démarquer et par même instance donné le tempo de la musique ce qui représente mon idéal",
+ "img":'img/batterie.jpg', "class":'img-src'},
+
+{"id":"2",
+"analogies":"un style graphique",
+"valeursAnalogies": "le style MISHKO",
+ "justification":"Style initié, inspiré par l'artiste Mishko. Il s'agit d'un style coloré et distordu et apparance aléatoire, il est souvent utiliser pour s'exprimer et se voit animé dans de nombreux montage vidéo dynamique et spectaculaire occulairement. Le côté artistique et visuel est ce qui m'attire et m'impressione le plus dans ce style",
+  "img":'img/MMI-MishkoEffect.png', "class":'img-src'},
+
+{"id":"3",
+"analogies":"une police d'écriture",
+"valeursAnalogies": "Century Gothic", 
+"justification":"Il s'agit d'une police d'écriture simple et sans empatement, elle est du type sans-serif et fait d'ailleurs plusieurs apparitions dans des series ou albums comme la série Dr House ou sur deux pochettes d'albums de Stromae. Ca simplicité définit le fond même de ma personnalité et son estéthisme particuliérre pour autant la rend attractive et plaisante à lire font de celle-ci une police adéquate pour l'écriture sur le web", 
+"img":'img/Century-gothic.jpg', "class":'img-src'},
+
+{"id":"4",
+"analogies":"une musique",
+"valeursAnalogies": "Libera Me From Hell",
+ "justification":"Musique de l'anime Gurren Lagann, il s'agit d'un mix de rap et de chant chrétiens en latin. Elle oppose deux thémes à savoir l'acceptance de la triste réalité ansi et le fait que nous ne serons jamais libres tandis que la partie rap affirme qu'il faut se détacher de cette pensé et qu'il faut se creuser son propre chemin, ne jamais cesser de se battre pour ses idéaux. Les deux parties se battent faisant un semblant de dance dans la chanson, la partie rap se voit même parfois noyer pour ressortir vers la fin afin de ressortir et assourdir son opposant. Elle est un symbole pour moi qui doute parfois de certains choix mais continue d'avancer, elle me sert de motivation et est le symbole de ma détermination", 
+ "img":'img/gurren-lagan_cover.jpg', "class":'img-src'},
+
+{"id":"5",
+"analogies":"style d'animation",
+"valeursAnalogies": "la sprite animation",
+ "justification":"Style d'animation unique en son genre, il s'agit d'un style étant un mélange de tout les autres (dessin, 3D, stop motion). Celui-ci se sert des personnages et fond en pixel ressemblant aux ancients jeux en 32, 16 et 8 bits. Pratiquant ce style depuis mon enfance, sa complexité dans sa réalisation et la simplicté dans son rendu son un reflet de moi-même et ma vie, ou chaque étape fut compliqué à réaliser mais son pourtant simple voir banal aux yeux du monde mais le challenge que cela apporte doonne l'envie de continuer. Il s'agit d'ailleurs du seul style qui ne soit pas utiliser à grande échelle dans l'industrie de l'animation ce qui en fait donc un style accéssible à tous",
+  "img":'img/sprite-animation.png', "class":'img-src'},
+
+{"id":"6",
+"analogies":"une émission",
+"valeursAnalogies": "Zen", 
+"justification":"L'humour et l'absurdité son les mots d'odre de cette émission; crée par deux personnalité d'internet, celle-ci devient vite populaire de par sa spécificité à ne pas être sérieuse et son inventivité. Une comédie ambulante doublé par de petit moment sérieux est ce qui personnalise qui je suis, et étant le moteur de ma personnalité à savoir tenté de faire rire les gens", 
+"img":'img/zen-emission.jpg', "class":'img-src'},
+
+{"id":"7",
+"analogies":"un jeux vidéo",
+"valeursAnalogies": "Sonic Frontiers",
+ "justification":"Jeux provenant d'une série de mon enfance, nouvelle opus sortie récemment en 2022. Celui-ci me marque par ses musiques et son monde ouvert. Pensé comme un renouveau pour la licence, elle me donne goût à l'exploration et surtout la vitesse de déplacement dans l'espace vaste, me donnant une soif de liberté et d'indépendance de tout, ses musiques ressonnent en mois comme un chant m'enrourageant à toujours avancer plus loin dans mon rêve et de dépasser mes limites ",
+  "img":'img/sonic-frontiers.jpg', "class":'img-src'}];
