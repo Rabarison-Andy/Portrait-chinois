@@ -8,3 +8,5 @@ Lancez le module Apache depuis le panneau de contrôle XAMPP
 Accèdez au site depuis cette adresse dans n'importe quel navigateur web : http://localhost/portrait_chinois
 
 Lien vers mon site: https://etudiant.u-pem.fr/~andy.rabarison/portrait-chinois/
+ou
+https://rabarison-andy.github.io/Portrait-chinois/
